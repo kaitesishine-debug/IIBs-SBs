@@ -1,11 +1,15 @@
 public class UNEBRegistration {
 
-    // General examination settings
+    // Static variables store examination settings shared by the entire application.
     static int examYear;
     static double registrationFee;
     static String gradingPolicy;
 
-    // Static initialization block
+    /*
+     * Static Initialization Block:
+     * Executes once when the UNEBRegistration class is loaded by the JVM.
+     * It is used to initialize general examination configuration.
+     */
     static {
         System.out.println("[STATIC BLOCK] Loading examination configuration...");
 
