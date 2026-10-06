@@ -1,5 +1,6 @@
 public class UNEBRegistration {
 
+    // General examination settings
     static int examYear;
     static double registrationFee;
     static String gradingPolicy;
@@ -21,5 +22,24 @@ public class UNEBRegistration {
 
         System.out.println("=== UNEB CANDIDATE REGISTRATION SYSTEM ===");
 
+        System.out.println("\n[MAIN] Creating first candidate...");
+        Candidate candidate1 = new Candidate(
+                "Sarah Namukasa",
+                "Makerere High School"
+        );
+
+        System.out.println("\n[MAIN] Creating second candidate...");
+        Candidate candidate2 = new Candidate(
+                "John Okello",
+                "Kampala Secondary School"
+        );
+
+        System.out.println("\n=== CANDIDATE DETAILS ===");
+
+        candidate1.displayCandidateInfo();
+
+        System.out.println();
+
+        candidate2.displayCandidateInfo();
     }
 }
